@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    height: 400px;
+    text-align: center;
+}
+
+.container1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.signature {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ff69b4;
+}
+
+.romantic-image {
+    width: 50%;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff69b4;
+    transition: transform 0.3s ease;
+}
+
+.romantic-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+.audio-player {
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-fullscreen-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.video-player {
+    width: 50%;
+    margin-top: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.video-player:hover {
+    transform: scale(1.05);
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-images {
+    display: flex;
+    overflow: visible;
+    width: 100%;
+}
+
+.carousel-images img {
+    min-width: 20%;
+    transition: transform 0.5s ease-in-out;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff69b4;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #ff1493;
+}
+
+.game-container {
+    margin-top: 20px;
+}
+
+#game-area {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ff69b4;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff69b4;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ff69b4;
+}
+
+.message-form {
+    margin-top: 20px;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 100px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.message-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff69b4;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.message-form button:hover {
+    background-color: #ff1493;
+}  
+
+.a1{
+    margin-top: 20px;
+    font-style: italic;
+    color: #ff69b4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+        <h1>Minha Declaração de Amor</h1>
+        <p class="message">Minha princesa,</p>
+        <p class="message">Desde o momento em que te conheci, minha vida mudou completamente. Você trouxe luz e alegria aos meus dias e me mostrou o que é o verdadeiro amor. Eu te amo mais do que palavras podem expressar e estou tão feliz por ter você ao meu lado, isso é o minímo que posso fazer, pois algo que quero entender é como vc pode resolver tantas coisas em mim sem nem precisar fazer. Com todos os nossos problemas nós amamos um pelo o outro, estar ao seu lado é um alivio pra mim, como eu sempre disse lá na escola que vc é minha chose one e sempre será, primeiro caso não é por acaso, só estou morreeendo de saudades de vc, fico até triste de lembrar, precisando de um abraço e um beijo seu como nós fizemos.</p>
+        <p class="signature">Com todo meu amor, feito pelo seu princeso, te amoooo mulher incrivel e feliz dia dos namoradosss</p>
+
+        <img src="/img/be.jpg" alt="Imagem Romântica" class="romantic-image">
+        <p>Vocë me fascinaaaa, meus olhos só estão aqui pra te apreciar e brilharem pra você.</p>
+    <audio controls autoplay>
+        <source src="/img/Amanda.mp3" type="audio/mpeg"  controls autoplay preload="auto">
+    </audio>
+    <video controls class="video-player">
+        <source src="/img/bebe.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <p>Seu cabelo de Deusa, esse video eu vejo direto, guardo com o maior carinho </p>
+    <div class="gallery">
+        <h2>Galeria de Momentos</h2>
+        <div class="carousel">
+            <button class="prev">❮</button>
+            <div class="carousel-images">
+                <img src="/img/foto2.jpg" alt="Momento 2">
+                <img src="/img/foto3.jpg" alt="Momento 3">
+            </div>
+            <button class="next">❯</button>
+        </div>
+        <p>tento realizar seus desejos e vontades</p>
+    </div>
+    <div class="game-container">
+        <h2>Jogo do Dia dos Namorados: Encontre as estrelas</h2>
+        <p>Clique nas estrelas que aparecem na tela!</p>
+        <div id="game-area"></div>
+        <p id="score">Pontos: 0</p>
+        <p>O jogo pode ser infinito, seria a comparação do que eu sinto por vc, as vezes não existe tamanho pra comparar. De tão gostosa que vc é, de astral incrivel que me chamou atenção, sempre sorridente ob:(que sorriso viu) e sempre linda como todos os dias. vale milhões beijinhos.</p>
+    </div>
+    <div class="message-form">
+        <h2>Deixe uma Mensagem</h2>
+        <form>
+            <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <p class="a1">espero que tenha gostado, tô tão triste, mas vamos conseguir, só reforçando, te amoo mil milhões e felizzz diaaa dossss namoradossss!!!!!!</p>
+    </div>
+</div>
+    
+    <script>
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gameArea = document.getElementById('game-area');
+    const scoreDisplay = document.getElementById('score');
+    let score = 0;
+
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.top = `${Math.random() * (gameArea.clientHeight - 30)}px`;
+        heart.style.left = `${Math.random() * (gameArea.clientWidth - 30)}px`;
+        heart.addEventListener('click', () => {
+            score++;
+            scoreDisplay.textContent = `Pontos: ${score}`;
+            heart.remove();
+        });
+
+        gameArea.appendChild(heart);
+
+        setTimeout(() => {
+            if (heart.parentElement === gameArea) {
+                heart.remove();
+            }
+        }, 1000);
+    }
+
+    setInterval(createHeart, 1000);
+
+
+ // Função do carrossel
+ const carouselImages = document.querySelector('.carousel-images');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        const imageWidth = carouselImages.children[0].clientWidth;
+        carouselImages.style.transform = `translateX(-${index * imageWidth}px)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselImages.children.length - 1;
+        showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex < carouselImages.children.length - 1) ? currentIndex + 1 : 0;
+        showImage(currentIndex);
+    });
+});
+
+    </script>
+</body>
+</html>
